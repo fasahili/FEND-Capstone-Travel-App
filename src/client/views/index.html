@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Plan your journey." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel App</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Travel App</h1>
+    </header>
+    <main class="main">
+      <section class="form-section">
+        <form id="tripForm" class="trip-form">
+          <div class="input-group">
+            <label for="place"><strong>Place:</strong></label>
+            <input
+              id="place"
+              type="text"
+              name="place"
+              placeholder="Name of the Place"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="date"><strong>Trip Date:</strong></label>
+            <input id="date" type="date" name="date" required />
+          </div>
+          <button type="submit" id="submit">Add Trip</button>
+        </form>
+      </section>
+      <section id="result-box">
+        <h2 class="text-center">Saved Trips</h2>
+        <div id="results" class="results"></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <a href="#" title="Visit Udacity">&copy; 2024 Travel App. All rights reserved.</a>
+    </footer>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/service-worker.js", { scope: "/" })
+            .then((registration) => {
+              console.log(
+                "Service Worker registered with scope:",
+                registration.scope
+              );
+            })
+            .catch((error) => {
+              console.error("Service Worker registration failed:", error);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
