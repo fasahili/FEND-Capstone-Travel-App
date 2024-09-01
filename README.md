@@ -19,6 +19,9 @@ The Travel Planner App enables users to effectively plan their trips. It provide
 - **Build Tool**: Webpack
 - **HTTP Client**: Axios
 
+## Prerequisites
+- Node.js version v20.11.1 or higher. You can check your Node version by running `node -v` in your terminal.
+
 ## API
 
 - **GeoNames API**
