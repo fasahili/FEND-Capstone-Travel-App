@@ -3,8 +3,8 @@
   "scripts": {
     "test": "jest",
     "start": "node src/server/server.js",
-    "build-prod": "webpack --config webpack.prod.js",
-    "build-dev": "webpack --config webpack.dev.js --open"
+    "dev": "webpack serve --config webpack.dev.js",
+    "prod": "webpack --config webpack.prod.js"
   },
   "dependencies": {
     "axios": "^1.7.3",
@@ -28,8 +28,9 @@
     "sass": "^1.77.8",
     "sass-loader": "^16.0.0",
     "style-loader": "^4.0.0",
-    "webpack": "^5.93.0",
+    "webpack": "^5.94.0",
     "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4",
     "workbox-webpack-plugin": "^7.1.0"
   }
 }
