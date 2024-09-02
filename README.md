@@ -36,17 +36,18 @@ Follow these steps to get your application up and running:
 ### 1. Building for Production
 
 When you are ready to build the production version of your app, use the following command. This will create optimized files in the dist folder, making your application ready for deployment.
+(http://localhost:9000/)
 
 ```bash
-npm run prod (http://localhost:9000/)
+npm run prod 
 ```
 
 ### 2. Start the Development Server
 
 Run the following command to start the development server and compile your application using Webpack. This server will automatically recompile your app as you make changes to the code.
-
+(http://localhost:3000/)
 ```bash
-npm run dev (http://localhost:3000/)
+npm run dev 
 ```
 
 
