@@ -33,7 +33,15 @@ The Travel Planner App enables users to effectively plan their trips. It provide
 
 Follow these steps to get your application up and running:
 
-### 1. Start the Development Server
+### 1. Building for Production
+
+When you are ready to build the production version of your app, use the following command. This will create optimized files in the dist folder, making your application ready for deployment.
+
+```bash
+npm run prod (http://localhost:9000/)
+```
+
+### 2. Start the Development Server
 
 Run the following command to start the development server and compile your application using Webpack. This server will automatically recompile your app as you make changes to the code.
 
@@ -41,13 +49,7 @@ Run the following command to start the development server and compile your appli
 npm run dev (http://localhost:3000/)
 ```
 
-### 2. Building for Production
 
-When you are ready to build the production version of your app, use the following command. This will create optimized files in the dist folder, making your application ready for deployment.
-
-```bash
-npm run prod (http://localhost:9000/)
-```
 
 ### 3. Start the Server
 
