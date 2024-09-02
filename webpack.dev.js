@@ -12,7 +12,7 @@ module.exports = merge(common, {
     proxy: [
       {
         context: ["/api"],
-        target: "http://localhost:8000",
+        target: "http://localhost:9000",
         changeOrigin: true,
         secure: false,
       },
